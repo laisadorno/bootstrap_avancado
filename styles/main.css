@@ -1,0 +1,84 @@
+
+body {
+    color: #b595ff;
+    background-color: #000 !important;   
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+#cabecalho {
+    color: #b595ff; 
+}
+
+
+.carousel-caption, .carousel-indicators, .carousel-caption * {
+    background-color: transparent;
+}
+
+
+section {
+    margin-top:3rem;
+    padding: 30px 0;
+}
+
+#sobre {
+    color: #b595ff; 
+}
+
+#contato {
+    color: #b595ff; 
+}
+
+.footer {
+    background-color: #551fb8;
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        font-size: 0.5em; 
+    }
+
+    .row {
+        font-size: 1.0em;
+        align-items: center;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 768px) and (max-width: 1023px) {
+
+    header {
+        font-size: 2.7em;
+    }
+
+    .container {
+        max-width: 90%;
+        font-size: 1.0em;
+    }
+
+    .row {
+        flex-direction: column;
+        grid-template-columns: repeat(2, 50%);
+        align-items: center;
+        display: block;
+    }
+    
+}
